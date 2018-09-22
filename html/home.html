@@ -1,0 +1,221 @@
+
+
+	<!-- 人気車種 -->
+		<article class="top-ninki wrap__full background__pattern">
+			<div class="top-ninki__inner">
+				<h2 class="top-ninki__title">
+					<img src="./wp-content/themes/monday/assets/top-ninki-title.png" alt="人気車種">
+				</h2>
+					<div id="topCar" class="top-ninki__slider" v-if="datas">
+						<slick ref="slick" :options="slickOptions">
+							<section class="car-list car-list-slider col-sm-38 col-xs-120" v-for="(car,index) in datas">
+								<header class="car-list__header">
+									<div class="car-list__category col-xs-42" :style="'background-color:'+car.price_detail.color">
+										<span class="car-list__category_main">全部<b>コミコミ</b></span><br>
+										<span class="car-list__category_num">{{priceSep(car.price_detail.slug)}}</span>
+										<span class="car-list__category_sub">万円～</span>
+									</div>
+									<div class="car-list__title col-xs-76 col-xs-push-2">
+										<p class="car-list__maker" v-text="car.maker_detail.name"></p>
+										<h3 class="car-list__name" v-text="car.acf.name"></h3>
+									</div>
+								</header>
+								<div class="car-list__content">
+									<a :href="car.link">
+										<figure class="car-list__figure" :style="'background-image:url('+car.acf.gallery[0].sizes.medium+')'">
+											<img :src="car.maker_detail.logo" :alt="car.maker_detail.name" class="car-list__makerlogo">
+										</figure>
+									</a>
+									<a :href="car.link"><div class="car-list__overlay"></div></a>
+								</div>
+							</section>
+						</slick>
+					</div>
+
+				<div class="text__align_center">
+					<a href="./car" class="top-ninki__btn btn btn__large">カーラインナップ</a>
+				</div>
+			</div>
+		</article>
+
+
+	<!-- 月々1万円から新車に乗れる -->
+		<section class="top-1manen">
+			<div class="top-1manen__inner wrap__main wrap__flex">
+				<div class="top-1manen__left col-sm-58 col-xs-120">
+					<h2 class="top-1manen__title">
+						<img src="./wp-content/themes/monday/assets/top-1man-title.png" alt="月々1万円～新車に乗れる！？">
+					</h2>
+				</div>
+				<div class="top-1manen__right col-sm-58 col-sm-push-4 col-xs-120">
+					<div class="top-1manen__point">
+						<img src="./wp-content/themes/monday/assets/top-1man-point1.png" alt="国産車ならどの車でもOK">
+					</div>
+					<div class="top-1manen__point">
+						<img src="./wp-content/themes/monday/assets/top-1man-point2.png" alt="車検・税金・諸費用コミコミ">
+					</div>
+					<div class="text__align_center">
+						<a href="" class="btn btn_large">月々1万円の魅力をもっと見る</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	<!-- 車検・整備 -->
+		<section class="top-shaken padding__main background__pattern">
+			<div class="wrap__main">
+				<header class="title-header">
+					<h2 class="title__main">MONDAYの車検・整備</h2>
+					<span class="title__main_after">shaken / seibi</span>
+				</header>
+
+				<div class="section-image section-image__align_right">
+					<div class="section-image__inner">
+						<div class="section-image__content col-sm-60 col-xs-120">
+							<h3 class="title__sub"><span>安心</span>の自社整備工場併設</h3>
+							<div class="section-image__description">
+								<p>近畿運輸局の認定を受けた自社整備工場を併設しておりますので、オイル交換から車検、整備まで、ディーラーに任せることなく<strong>全て自社で完結</strong>することができます。</p>
+								<p>また、アフターサポートも自社整備工場にて対応いたしますので不意のトラブルにも<strong>いち早く対応</strong>することが可能です！</p>
+							</div>
+						</div>
+						<figure class="section-image__figure col-sm-60 col-xs-120">
+							<img src="./wp-content/themes/monday/assets/top-shaken-pct.png" alt="" class="section-image__img image__border">
+						</figure>
+					</div>
+				</div>
+
+				<div class="section-box col-sm-80 col-xs-120">
+					<div class="section-box__inner">
+						<figure class="section-box__figure">
+							<img src="./wp-content/themes/monday/assets/top-shaken-nintei.png" alt="" class="section-box__image">
+						</figure>
+						<div class="section-box__content">
+							<h3 class="title__mini">近畿運輸局認定工場とは？</h3>
+							<div class="section-box__description">
+								<p>自動車の「分解整備」を行おうとする場合は、地方運輸局長の「認証」を受けなければなりません（道路運送車両法第78条第1項）。この「認証」を受けた工場を「認証工場」と言います。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="top-shaken__btn padding__pc_left col-sm-40 col-xs-120 text__align_center">
+					<a href="./hoken_shaken/#shaken" class="btn col-sm-120 col-xs-59">車検について</a>
+					<a href="./seibi_tenken/" class="btn col-sm-120 col-xs-59 col-xs-offset-2">整備について</a>
+				</div>
+
+			</div>
+		</section>
+
+	<!-- ブログ・facebook -->
+		<div class="blogs wrap__main wrap__flex padding__main">
+			<article class="top-blog col-sm-59 col-xs-120">
+				<header class="title-header">
+					<h2 class="title__main">MONDAYブログ</h2>
+					<span class="title__main_after">BLOG</span>
+				</header>
+
+				<section v-for="data in datas" class="section-blog" v-if="datas">
+					<div class="section-blog__inner">
+						<figure v-if="getImgUrl(data,'thumbnail')" class="section-blog__figure">
+							<img :src="getImgUrl(data,'thumbnail')" :alt="data.title.rendered" class="section-blog__img">
+						</figure>
+						<div class="section-blog__content">
+							<time class="section-blog__time" data-time="postDate(data,true)" v-text="postDate(data,false)"></time>
+							<h3 class="section-blog__title"><a :href="data.link" v-text="data.title.rendered"></a></h3>
+							<div class="section-blog__excerpt" v-html="description(data,54)"></div>
+						</div>
+					</div>
+				</section>
+
+				<div class="text__align_center">
+					<a href="./blog/" class="btn">MONDAYブログ一覧</a>
+				</div>
+			</article>
+				
+				<!-- <div class="pager">
+					<div class="pager__link" v-for="n in total" @click="Pager(n)" :class="{ pager__link_on : n==pager }" v-text="n"></div>
+				</div>
+ -->
+			<div class="facebook col-sm-59 col-sm-push-2 col-xs-120">
+				<iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmondayauto&tabs=timeline&width=485&height=690&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1746461795657397" width="485" height="690" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+			</div>
+		</div>
+
+	<!-- 店舗情報 -->
+		<div class="padding__main background__pattern">
+			<div class="wrap__main">
+				<article class="top-about">
+					<header class="title-header">
+						<h2 class="title__main">店舗紹介</h2>
+						<span class="title__main_after">ABOUT</span>
+					</header>
+
+					<section class="section-about col-sm-59 col-xs-120">
+						<div class="section-about__inner">
+							<h3 class="section-about__title title__allow">本社（ショールーム）</h3>
+							<figure class="section-about__figure">
+								<img src="./wp-content/themes/monday/assets/top-about-otsu.png" alt="" class="section-about__img image__border">
+							</figure>
+							<div class="section-about__content">
+								<table class="table">
+									<tr>
+										<td class="table__td_first">住所</td>
+										<td class="table__td_last">〒595-0004 大阪府泉大津市千原町1-60-1</td>
+									</tr>
+									<tr>
+										<td class="table__td_first">営業時間</td>
+										<td class="table__td_last">10:00～20:00</td>
+									</tr>
+									<tr>
+										<td class="table__td_first">定休日</td>
+										<td class="table__td_last">月曜日</td>
+									</tr>
+									<tr>
+										<td class="table__td_first">電話番号</td>
+										<td class="table__td_last">0725-43-2335</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</section>
+
+					<section class="section-about col-sm-59 col-sm-push-2 col-xs-120">
+						<div class="section-about__inner">
+							<h3 class="section-about__title title__allow">関空泉佐野店</h3>
+							<figure class="section-about__figure">
+								<img src="./wp-content/themes/monday/assets/top-about-sano.png" alt="" class="section-about__img image__border">
+							</figure>
+							<div class="section-about__content">
+								<table class="table">
+									<tr>
+										<td class="table__td_first">住所</td>
+										<td class="table__td_last">〒598-0036 大阪府泉佐野市南中岡本313-1</td>
+									</tr>
+									<tr>
+										<td class="table__td_first">営業時間</td>
+										<td class="table__td_last">10:00～20:00</td>
+									</tr>
+									<tr>
+										<td class="table__td_first">定休日</td>
+										<td class="table__td_last">月曜日</td>
+									</tr>
+									<tr>
+										<td class="table__td_first">電話番号</td>
+										<td class="table__td_last">072-466-1111</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</section>
+
+				</article>
+				<div class="top-shaken__btn padding__top text__align_center">
+					<a href="./about/" class="btn col-sm-40 col-sm-push-40">詳しく見る</a>
+				</div>
+			</div>
+		</div>
+
+<script>
+	var perPage = 5
+</script>
