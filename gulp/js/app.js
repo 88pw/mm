@@ -181,11 +181,13 @@ if (document.getElementById('topCar')) {
     el: "#topCar",
     components: {
       Slick,
+      loader
     },
     data() {
       return {
         datas: [],
         carIds: [],
+        flag: false,
         slickOptions: {
           slidesToShow: 6,
           slidesToScroll: 3,
@@ -233,6 +235,7 @@ if (document.getElementById('topCar')) {
               this.$nextTick(()=>{
                 pictureCunstom('.car-list__figure','1.486')
               })
+              this.flag = true
             })
           }
         })
