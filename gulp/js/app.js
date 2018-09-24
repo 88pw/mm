@@ -672,6 +672,9 @@ if(document.getElementsByClassName('archives')){
           query: "",
         }
       },
+      components:{
+        loader
+      },
       methods: {
         Pager(n){
           this.$el.getElementsByClassName('content-pager__page')[this.pager-1].classList.remove('content-pager__page_active')
