@@ -23092,6 +23092,9 @@ if (document.getElementsByClassName('blogs')) {
         };
       },
 
+      components: {
+        loader: _loader2.default
+      },
       methods: {
         Pager: function Pager(n) {
           this.pager = n;
