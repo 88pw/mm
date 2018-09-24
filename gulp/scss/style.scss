@@ -1030,6 +1030,10 @@ b{
   nav
 *******************************/
 
+.globalnav{
+  @include font-size(20);
+}
+
 @media screen and (min-width: 769px){
   #gnavi{
     background-color: $color-theme;
