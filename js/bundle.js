@@ -22923,7 +22923,6 @@ if (document.getElementsByClassName('carLists')) {
         };
       },
 
-
       methods: {
         priceSep: function priceSep(price) {
           if (price.indexOf('_') != -1) {
