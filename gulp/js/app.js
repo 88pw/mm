@@ -408,6 +408,7 @@ if(document.getElementsByClassName('carLists')){
           segment: x.dataset.id,
         };
       },
+
       methods: {
         priceSep(price){
           if(price.indexOf('_') != -1){

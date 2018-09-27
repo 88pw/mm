@@ -29,7 +29,7 @@
 				<h2 class="title__main">カーラインナップ</h2>
 				<span class="title__main_after">car lineup</span>
 			</header>
-			
+
 
 			<section class="carLists car-list-section" data-id="13" v-if="datas.length">
 				<h2 class="title__main2 title__main2_type2" :style="'background-color:'+color">月々<span>0.8</span>万円～</h2>
