@@ -23221,9 +23221,6 @@ if (document.getElementsByClassName('archives')) {
         };
       },
 
-      components: {
-        loader: _loader2.default
-      },
       methods: {
         Pager: function Pager(n) {
           this.$el.getElementsByClassName('content-pager__page')[this.pager - 1].classList.remove('content-pager__page_active');

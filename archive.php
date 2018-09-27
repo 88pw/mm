@@ -50,14 +50,11 @@ Template Name: アーカイブページ -
 
     </div>
 
-		<loader :flag="!datas.length" />
-
-    <div class="content-pager" v-if="datas">
+    <div class="content-pager">
       <a href="#top" v-if="pager > 1"><i class="fa fa-angle-left content-pager__arrow" aria-hidden="true" @click="Pager(pager-1)"></i></a>
       <a href="#top" class="content-pager__page" v-if="n-1 <= (dataBase.length/perPage)" v-for="n in total" @click="Pager(n)" :class="{'content-pager__page_active':n==1}" v-text="n"></a>
       <a href="#top" v-if="pager < total"><i class="fa fa-angle-right content-pager__arrow" aria-hidden="true" @click="Pager(pager+1)"></i></a>
     </div>
-
 
   </div>
 
