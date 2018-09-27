@@ -22652,14 +22652,12 @@ if (document.getElementById('topCar')) {
   var topCarInstance = new _vue2.default({
     el: "#topCar",
     components: {
-      Slick: _vueSlick2.default,
-      loader: _loader2.default
+      Slick: _vueSlick2.default
     },
     data: function data() {
       return {
         datas: [],
         carIds: [],
-        flag: false,
         slickOptions: {
           slidesToShow: 6,
           slidesToScroll: 3,
@@ -22710,7 +22708,6 @@ if (document.getElementById('topCar')) {
                 _this3.$nextTick(function () {
                   pictureCunstom('.car-list__figure', '1.486');
                 });
-                _this3.flag = true;
               });
             }
           } catch (err) {
