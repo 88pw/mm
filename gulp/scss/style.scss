@@ -369,6 +369,27 @@ b{
   }
 }
 
+svg path {
+  fill: none;
+  stroke: $color-base;
+  stroke-width: 7;
+  stroke-dasharray: 1800;
+  stroke-dashoffset: 1800;
+  -webkit-animation: dash 10s linear forwards;
+  animation: dash 10s linear forwards;
+}
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 10000;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 10000;
+  }
+}
+
+
 /*******************************
   padding
 *******************************/

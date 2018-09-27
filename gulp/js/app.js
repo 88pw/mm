@@ -6,11 +6,11 @@ import Slick from 'vue-slick'
   load
 *******************/
 
-// window.onload = () =>{
-//   setInterval(()=>{
-//     document.getElementById('preLoader').classList.add('preloader__remove')
-//   },500)
-// }
+window.onload = () =>{
+  setInterval(()=>{
+    document.getElementById('preLoader').classList.add('preloader__remove')
+  },500)
+}
 
 
 /*******************
