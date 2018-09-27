@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import axios from 'axios'
 import Slick from 'vue-slick'
-import loader from './loader.vue'
 
 /*******************
   load
