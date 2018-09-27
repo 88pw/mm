@@ -572,9 +572,6 @@ if(document.getElementsByClassName('blogs')){
           totalPosts: 0,
         };
       },
-      components:{
-        loader
-      },
       methods: {
         Pager(n){
           this.pager = n
