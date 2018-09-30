@@ -100,6 +100,7 @@
 <script>
 	var post_id = "<?php the_id(); ?>";
 	var perPage = 6;
+	countTime = 5000
 </script>
 
 <?php get_footer();?>

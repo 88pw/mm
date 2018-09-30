@@ -9,7 +9,7 @@ import Slick from 'vue-slick'
 window.onload = () =>{
   setInterval(()=>{
     document.getElementById('preLoader').classList.add('preloader__remove')
-  },500)
+  },countTime)
 }
 
 
