@@ -21,6 +21,7 @@
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/style.css">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <?php wp_head() ?>
+  <script>var countTime = 1000</script>
 </head>
 <body>
 

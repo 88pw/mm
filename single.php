@@ -90,4 +90,6 @@
 		</div>
 </main>
 
+<script>countTime = 2000</script>
+
 <?php get_footer();?>

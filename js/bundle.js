@@ -22337,7 +22337,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 window.onload = function () {
   setInterval(function () {
     document.getElementById('preLoader').classList.add('preloader__remove');
-  }, 500);
+  }, countTime);
 };
 
 /*******************
