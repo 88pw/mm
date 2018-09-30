@@ -369,6 +369,27 @@ b{
   }
 }
 
+svg path {
+  fill: none;
+  stroke: $color-base;
+  stroke-width: 7;
+  stroke-dasharray: 1800;
+  stroke-dashoffset: 1800;
+  -webkit-animation: dash 10s linear forwards;
+  animation: dash 10s linear forwards;
+}
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 10000;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 10000;
+  }
+}
+
+
 /*******************************
   padding
 *******************************/
@@ -1030,6 +1051,7 @@ b{
   nav
 *******************************/
 
+
 @media screen and (min-width: 769px){
   #gnavi{
     background-color: $color-theme;
@@ -1685,15 +1707,6 @@ b{
 *******************************/
 
 @media screen and (max-width: 768px){
-  .menu-item{
-    padding: 10px 15px;
-    br{
-      display: none;
-    }
-    &-has-children{
-      padding-bottom: 0px;
-    }
-  }
   .header{
     position: relative;
     &__nav{
@@ -1810,13 +1823,50 @@ b{
       display: none;
     }
   }
+  .globalnav{
+    @include font-size(18);
+    > .menu-item > a{
+      &:before{
+        display: inline;
+        content: "▶";
+        color: $color-sub;
+        margin-right: 1em;
+        @include font-size(14);
+      }
+    }
+  }
   .sub-menu{
     @include cf;
     .menu-item{
-      display: inline-block;
+      @include font-size(16);
+      display: block;
+    }
+  }
+  .menu-item{
+    padding: 7px 10px;
+    br{
+      display: none;
+    }
+    .menu-item{
+      padding-left: 2em;
+      a{
+        &:before{
+          display: inline;
+          content: "▶";
+          color: $color-sub;
+          margin-right: 1em;
+          @include font-size(12);
+        }
+      }
+    }
+    &-has-children{
+      padding-bottom: 0px;
     }
   }
 }
+
+
+
 
 
 /*******************************
