@@ -25,7 +25,7 @@ Template Name: アーカイブページ -
 	<!-- pan -->
 		<div class="pan">
 			<div class="pan__inner wrap__main">
-				<div class="pan__item"><a href="../">大阪の新車販売店【MONDAY -マンデー-】</a></div>
+				<div class="pan__item"><a href="../">大阪の新車販売店【マンデーオート - MONDAY AUTO】</a></div>
 				<div class="pan__item">ブログ一覧</div>
 			</div>
 		</div>

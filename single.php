@@ -23,7 +23,7 @@
 	<!-- pan -->
 		<div class="pan content-single__pan" v-if="data">
 			<div class="pan__inner wrap__main">
-				<div class="pan__item"><a href="../">大阪の新車販売店【MONDAY -マンデー-】</a></div>
+				<div class="pan__item"><a href="../">大阪の新車販売店【マンデーオート - MONDAY AUTO】</a></div>
 				<div class="pan__item"><a href="../blog/">ブログ一覧</a></div>
 				<div class="pan__item" v-text="data.title.rendered"></div>
 			</div>
