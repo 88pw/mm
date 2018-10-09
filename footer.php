@@ -43,7 +43,7 @@
             </div>
           </div>
           <div class="col-sm-30 col-xs-120">
-            <small class="footer-content__copy">2018 © マンデーオート - MONDAY AUTO</small>
+            <small class="footer-content__copy">2018 © 株式会社MONDAY - マンデー</small>
           </div>
         </div>
       </div>
