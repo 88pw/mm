@@ -17,7 +17,7 @@
 <!-- pan -->
 	<div class="pan">
 		<div class="pan__inner wrap__main">
-			<div class="pan__item"><a href="../../">大阪の新車販売店【マンデーオート - MONDAY AUTO】</a></div>
+			<div class="pan__item"><a href="../../">大阪の新車販売店【マンデーオート - 株式会社マンデー】</a></div>
 			<div class="pan__item"><a href="../">カーラインナップ</a></div>
 			<div class="pan__item"><?php echo $post->post_title ?></div>
 		</div>

@@ -28,7 +28,7 @@
           </div>
           <div class="col-sm-30 col-xs-120">
             <div class="footer-content__info">
-              <p class="footer-content__title">ショールーム</p>
+              <p class="footer-content__title">本社・ショールーム</p>
               <p>大阪府泉大津市千原町1-60-1</p>
               <p>TEL：0725-43-2355</p>
               <p>営業時間：10:00～19:00 （月曜定休）</p>
@@ -36,14 +36,14 @@
           </div>
           <div class="col-sm-30 col-xs-120">
             <div class="footer-content__info">
-              <p class="footer-content__title">MONDAY　関空泉佐野店</p>
+              <p class="footer-content__title">関空泉佐野店</p>
               <p>大阪府泉佐野市南中岡本313-1</p>
               <p>TEL：072-466-1111</p>
               <p>営業時間：10:00～19:00 （月曜定休）</p>
             </div>
           </div>
           <div class="col-sm-30 col-xs-120">
-            <small class="footer-content__copy">2018 © 株式会社MONDAY - マンデー</small>
+            <small class="footer-content__copy">2018 © 株式会社マンデー</small>
           </div>
         </div>
       </div>
