@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require("webpack");
 
 module.exports = {
   // エントリーポイントの設定
@@ -10,6 +11,9 @@ module.exports = {
     // 出力先のパス（v2系以降は絶対パスを指定する必要がある）
     path: path.join(__dirname, 'js')
   },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin()
+  ],
   module:{
   	loaders:[{
   		test: /\.js$/,
@@ -42,5 +46,6 @@ module.exports = {
       vue: 'vue/dist/vue.js',
       // slick: 'slick-carousel/slick/',
     }
-  }
+  },
+  devtool: 'inline-source-map'
 };

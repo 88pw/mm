@@ -12,7 +12,7 @@
 								<header class="car-list__header">
 									<div class="car-list__category col-xs-42" :style="'background-color:'+car.price_detail.color">
 										<span class="car-list__category_main">全部<b>コミコミ</b></span><br>
-										<span class="car-list__category_num">{{priceSep(car.price_detail.slug)}}</span>
+										<span class="car-list__category_num" v-text="priceSep(car.price_detail.slug)"></span>
 										<span class="car-list__category_sub">万円～</span>
 									</div>
 									<div class="car-list__title col-xs-76 col-xs-push-2">
@@ -80,7 +80,7 @@
 							</div>
 						</div>
 						<figure class="section-image__figure col-sm-60 col-xs-120">
-							<img src="./wp-content/themes/monday/assets/top-shaken-pct.png" alt="" class="section-image__img image__border">
+							<img src="./wp-content/themes/monday/assets/top-shaken-pct.jpg" alt="" class="section-image__img image__border">
 						</figure>
 					</div>
 				</div>
@@ -155,7 +155,7 @@
 						<div class="section-about__inner">
 							<h3 class="section-about__title title__allow">本社（ショールーム）</h3>
 							<figure class="section-about__figure">
-								<img src="./wp-content/themes/monday/assets/top-about-otsu.png" alt="" class="section-about__img image__border">
+								<img src="./wp-content/themes/monday/assets/top-about-otsu.jpg" alt="" class="section-about__img image__border">
 							</figure>
 							<div class="section-about__content">
 								<table class="table">
@@ -184,7 +184,7 @@
 						<div class="section-about__inner">
 							<h3 class="section-about__title title__allow">関空泉佐野店</h3>
 							<figure class="section-about__figure">
-								<img src="./wp-content/themes/monday/assets/top-about-sano.png" alt="" class="section-about__img image__border">
+								<img src="./wp-content/themes/monday/assets/top-about-sano.jpg" alt="" class="section-about__img image__border">
 							</figure>
 							<div class="section-about__content">
 								<table class="table">
