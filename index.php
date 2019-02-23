@@ -11,7 +11,8 @@ Template Name: ページテンプレート -
 	<?php
 		$content = get_post($wp_query->post->ID)->post_content;
 		$slug =  get_post($wp_query->post->ID)->post_name;
-		$fileUrl = 'html/'.$slug.'.html';
+		$fileUrl = file_exists(get_template_directory_uri().'/html/'.$slug.'.html') ? 'html/'.$slug.'.html' : 'html/'.$slug.'.php';
+
 
 		if($content == '' && $content == '<p></p>' ){
 			the_content();

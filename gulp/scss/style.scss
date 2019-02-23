@@ -16,27 +16,52 @@ $font-theme: 'NotoSans-R',YuGothic,"ヒラギノ角ゴ ProN W3", Hiragino Kaku G
 $font-web:'Sorts Mill Goudy', sans-serif;
 $content_width:1004px;
 
+
 @font-face {
     font-family: 'NotoSans-L';
-    src: url('../fonts/NotoSansCJKjp-DemiLight.eot');
-    src: url('../fonts/NotoSansCJKjp-DemiLight.eot?iefix') format('eot'),
-         url('../fonts/NotoSansCJKjp-DemiLight.woff') format('woff'),
-         url('../fonts/NotoSansCJKjp-DemiLight.ttf') format('truetype'),
+   font-style: normal;
+   font-weight: 500;
+   src: url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff2') format('woff2'),
+        url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff') format('woff'),
+        url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.otf') format('opentype');
 }
 @font-face {
     font-family: 'NotoSans-M';
-    src: url('../fonts/NotoSansCJKjp-Medium.eot');
-    src: url('../fonts/NotoSansCJKjp-Medium.eot?iefix') format('eot'),
-         url('../fonts/NotoSansCJKjp-Medium.woff') format('woff'),
-         url('../fonts/NotoSansCJKjp-Medium.ttf') format('truetype'),
+   font-style: normal;
+   font-weight: 500;
+   src: url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.woff2') format('woff2'),
+        url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.woff') format('woff'),
+        url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.otf') format('opentype');
 }
 @font-face {
     font-family: 'NotoSans-R';
-    src: url('../fonts/NotoSansCJKjp-Regular.eot');
-    src: url('../fonts/NotoSansCJKjp-Regular.eot?iefix') format('eot'),
-         url('../fonts/NotoSansCJKjp-Regular.woff') format('woff'),
-         url('../fonts/NotoSansCJKjp-Regular.ttf') format('truetype'),
+   font-style: normal;
+   font-weight: 500;
+   src: url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff2') format('woff2'),
+        url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff') format('woff'),
+        url('//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.otf') format('opentype');
 }
+// @font-face {
+//     font-family: 'NotoSans-L';
+//     src: url('../fonts/NotoSansCJKjp-DemiLight.eot');
+//     src: url('../fonts/NotoSansCJKjp-DemiLight.eot?iefix') format('eot'),
+//          url('../fonts/NotoSansCJKjp-DemiLight.woff') format('woff'),
+//          url('../fonts/NotoSansCJKjp-DemiLight.ttf') format('truetype'),
+// }
+// @font-face {
+//     font-family: 'NotoSans-M';
+//     src: url('../fonts/NotoSansCJKjp-Medium.eot');
+//     src: url('../fonts/NotoSansCJKjp-Medium.eot?iefix') format('eot'),
+//          url('../fonts/NotoSansCJKjp-Medium.woff') format('woff'),
+//          url('../fonts/NotoSansCJKjp-Medium.ttf') format('truetype'),
+// }
+// @font-face {
+//     font-family: 'NotoSans-R';
+//     src: url('../fonts/NotoSansCJKjp-Regular.eot');
+//     src: url('../fonts/NotoSansCJKjp-Regular.eot?iefix') format('eot'),
+//          url('../fonts/NotoSansCJKjp-Regular.woff') format('woff'),
+//          url('../fonts/NotoSansCJKjp-Regular.ttf') format('truetype'),
+// }
 
 @mixin cf{
   &:after{

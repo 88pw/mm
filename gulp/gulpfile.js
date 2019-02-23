@@ -1,6 +1,7 @@
 //プラグインの読み込み
 const gulp = require("gulp");
 const sass = require("gulp-sass");
+const cleancss = require("gulp-clean-css");
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const plumber  = require('gulp-plumber');
@@ -73,6 +74,7 @@ gulp.task("default", function() {
         includePaths: require('node-reset-scss').includePath,
         outputStyle: 'expanded'
       }).on('error', sass.logError)) //プラグインの実行
+      .pipe(cleancss())
       .pipe(sourcemaps.write({includeContent: false}))
       .pipe(sourcemaps.init({loadMaps: true}))
       .pipe(autoprefixer())
